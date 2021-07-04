@@ -4,7 +4,7 @@ class Base{
 
         var option = {
 
-            restitution : 0.5,
+            restitution : 1,
             density : 2,
             friction : 2
         }
@@ -24,7 +24,7 @@ class Base{
         push();
         translate(posi.x,posi.y);
         rotate(angle);
-        rectMode(CENTER);
+        imageMode(CENTER);
         image(this.image,0,0,this.w,this.h);
         pop();
     }
